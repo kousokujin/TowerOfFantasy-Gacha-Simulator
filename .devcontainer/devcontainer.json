@@ -1,0 +1,12 @@
+{
+    "name": "Static Vue3",
+    "dockerComposeFile": "../dev/docker-compose.yml",
+    "service": "webapp",
+    "workspaceFolder": "/usr/var/app",
+    "extensions": [
+        "dbaeumer.vscode-eslint"
+    ],
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    }
+}

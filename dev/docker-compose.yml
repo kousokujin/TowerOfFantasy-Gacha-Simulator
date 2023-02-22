@@ -1,0 +1,16 @@
+version: '3'
+services:
+  webapp:
+    build: node
+    image: node-express-dev:1.0
+    tty: true
+    environment:
+      TZ: 'Asia/Tokyo'
+    volumes:
+      - ../:/usr/var/app
+  http:
+    image: httpd
+    volumes:
+      - ../dist/:/usr/local/apache2/htdocs/
+    ports:
+      - "8080:80"

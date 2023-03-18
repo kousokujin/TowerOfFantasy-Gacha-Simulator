@@ -11,7 +11,20 @@ const router = createRouter({
     {
       path: '/blackcore',
       name: 'Blackcore',
-      component: () => import('./components/blackcore.vue')
+      props: true,
+      meta: {
+        type: "blackcore"
+      },
+      component: () => import('./components/GachaView.vue')
+    },
+    {
+      path: '/goldcore',
+      name: "Goldcore",
+      props: true,
+      meta: {
+        type: "goldcore"
+      },
+      component: () => import('./components/GachaView.vue')
     }
   ]
 })

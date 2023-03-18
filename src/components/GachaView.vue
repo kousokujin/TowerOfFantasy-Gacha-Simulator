@@ -75,18 +75,18 @@
 </template>
 
 <script>
-  import GachaController from "../lib/LIBlackcoreController.js"
-  export default {
-    name: 'BlackCore',
+  import GachaCreator from "../lib/LIControllerCreator.js"
 
+  export default {
     data(){
       return {
-        controller: new GachaController()
+        controller: GachaCreator(this.$route.meta.type)
       }
     },
     
     methods:{
       DrawButton: function(){
+        console.log(this.$route.meta.type)
         this.controller.Draw_AnyCount(10)
       }
     },

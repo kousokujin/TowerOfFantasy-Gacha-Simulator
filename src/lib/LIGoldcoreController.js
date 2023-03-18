@@ -1,4 +1,4 @@
-import BlackcoreController from "LIBlackcoreController.js"
+import BlackcoreController from "./LIBlackcoreController.js"
 import GoldcoreMap from "../maps/goldcore.js";
 
 class GoldCoreController extends BlackcoreController{

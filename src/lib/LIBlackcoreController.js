@@ -30,6 +30,10 @@ class BlackCoreController{
         return this.m_last10;
     }
 
+    get title(){
+        return "ブラックコアガチャ"
+    }
+
     history_lists(reality){
         let reality_fix = this.ConvertReality(reality)
         return Object.keys(this.m_result_history).filter(x=>{
@@ -102,6 +106,9 @@ class BlackCoreController{
 
     WriteHistory(drop){
         this.m_result_history[drop.name].count += 1
+        if(drop.ceiling == true){
+            this.m_result_history[drop.name].ceiling_count += 1
+        }
         this.SetLast10(drop);
     }
 
@@ -116,11 +123,10 @@ class BlackCoreController{
     }
 
     SetLast10(item){
-        while(this.m_last10.length > 10){
+        while(this.m_last10.length >= 10){
             this.m_last10.shift()
         }
         this.m_last10.push(item)
-    
     }
 
     ConvertReality(reality){
@@ -133,6 +139,16 @@ class BlackCoreController{
             default:
                 return reality;
         }
+    }
+
+    Reset(){
+        this.m_last10 = []
+
+        Object.keys(this.m_result_history).forEach(x=>{
+            this.m_result_history[x].count = 0
+            this.m_result_history[x].ceiling_count = 0
+        })
+
     }
 }
 

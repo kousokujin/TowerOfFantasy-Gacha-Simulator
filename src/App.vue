@@ -36,7 +36,7 @@ export default {
         {title: "ブラックコアガチャ", link: "/blackcore", icon: "mdi-circle"},
       ],
       spetials: [
-        {title: "ゴールドコアガチャ", link: "/goldcore", icon: "mdi-fish"},
+        {title: "フェンリル", link: "/redcore/Fenrir", icon: "mdi-fish"},
         {title: "ブラックコアガチャ", link: "/blackcore", icon: "mdi-fish"},
       ] 
     }

@@ -26,6 +26,7 @@
 </template>
 
 <script>
+import special_items from "./maps/redcore_specials.js"
 export default {
   name: 'App',
   data: () => ({
@@ -35,11 +36,19 @@ export default {
         {title: "ゴールドコアガチャ", link: "/goldcore", icon: "mdi-circle-outline"},
         {title: "ブラックコアガチャ", link: "/blackcore", icon: "mdi-circle"},
       ],
-      spetials: [
-        {title: "フェンリル", link: "/redcore/Fenrir", icon: "mdi-fish"},
-        {title: "ブラックコアガチャ", link: "/blackcore", icon: "mdi-fish"},
-      ] 
+      spetials: [] 
     }
   }),
+
+  created: function(){
+    Object.keys(special_items).forEach(x=>{
+      let add_item = {
+        title: special_items[x].title,
+        link: "/redcore/"+x,
+        icon: "mdi-fish"
+      }
+      this.nav_list.spetials.push(add_item)
+    })
+  }
 };
 </script>

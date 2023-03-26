@@ -145,9 +145,9 @@
                   </v-table>
                 </v-window-item>
                 <v-window-item value="cost_edit">
-                  <v-text-field clearable label="煙水晶" v-model="cost_textareas.crystal"></v-text-field>
-                  <v-text-field clearable label="所有ルチル" v-model="cost_textareas.exist_tanium"></v-text-field>
-                  <v-text-field clearable label="レッドコア" v-model="cost_textareas.core"></v-text-field>
+                  <v-text-field clearable label="煙水晶" v-model="calc_cost.crystal"></v-text-field>
+                  <v-text-field clearable label="所有ルチル" v-model="calc_cost.exist_tanium"></v-text-field>
+                  <v-text-field clearable :label="controller.item_name" v-model="calc_cost.core_count"></v-text-field>
                 </v-window-item>
               </v-window>
             </v-card-item>
@@ -166,27 +166,20 @@
   import GachaCreator from "../lib/LIControllerCreator.js"
   import CostCalclator from "../lib/LICalcCost.js"
 
-  function CreateController(path){
-        let split_path = path.split('/')
-
-        if(split_path.length >= 3){
-          return GachaCreator(split_path[1],split_path[2])
+  function CreateController(path_params){
+        if('id' in path_params){
+          return GachaCreator(path_params.type,path_params.id)
         } 
-        return GachaCreator(split_path[1])
+        return GachaCreator(path_params.type)
   }
 
   export default {
     data(){
       return {
-        controller: CreateController(this.$route.path),
+        controller: CreateController(this.$route.params),
         calc_cost: new CostCalclator(),
         reality_tabs: null,
-        cost_tabs: null,
-        cost_textareas: {
-          crystal: 0,
-          exist_tanium: 0,
-          core: 0
-        }
+        cost_tabs: null
       }
     },
     
@@ -245,23 +238,20 @@
     },
 
     watch:{
-      '$route'(to){
-        this.controller = CreateController(to.path)
+      '$route.params'(to){
+        console.log(to)
+        this.controller = CreateController(to)
         document.title = this.controller.title
       },
       'controller.draw_count': function(to){
         this.calc_cost.draw_count = to
-      },
-      'cost_textareas.core': function(to){
-        this.calc_cost.core_count = to
-      },
-      'cost_textareas.crystal': function(to){
-        this.calc_cost.crystal = to
-      },
-      'cost_textareas.exist_tanium': function(to){
-        this.calc_cost.exist_tanium = to
       }
 
+    },
+    beforeRouteUpdate(to, from, next) {
+      console.log(to)
+      console.log(from)
+      next();
     }
   }
 </script>

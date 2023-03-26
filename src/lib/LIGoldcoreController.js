@@ -10,6 +10,10 @@ class GoldCoreController extends BlackcoreController{
         return "ゴールドコアガチャ"
     }
 
+    get item_name(){
+        return "ゴールドコア"
+    }
+
     OneDraw(write_history = true){
         if((this.draw_count + 1) % 80 == 0){
             return this.DrawOnlyOneReality("SSR",write_history);

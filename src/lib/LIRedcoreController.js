@@ -16,6 +16,11 @@ class RedCoreController extends GoldcoreController{
         return this.spetial.title
     }
 
+    get item_name(){
+        return "レッドコア"
+    }
+
+
     OneDraw(write_history = true){
         let drop = super.OneDraw(false)
         

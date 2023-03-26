@@ -34,6 +34,11 @@ class BlackCoreController{
         return "ブラックコアガチャ"
     }
 
+    get item_name(){
+        return "ブラックコア"
+    }
+
+
     history_lists(reality){
         let reality_fix = this.ConvertReality(reality)
         return Object.keys(this.m_result_history).filter(x=>{

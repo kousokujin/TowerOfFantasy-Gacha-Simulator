@@ -1,24 +1,9 @@
-# tof_gacha_sim2
+# 幻塔ガチャシミュレーター
 
-## Project setup
-```
-npm install
-```
+## これなに
+- [Tower Of Fantasy](https://www.toweroffantasy-global.com/index.html?lang=ja)のガチャをシミュレーションするやつです。
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Licence
+Copyright (c) 2023 kousokujin.
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Released under the MIT license.

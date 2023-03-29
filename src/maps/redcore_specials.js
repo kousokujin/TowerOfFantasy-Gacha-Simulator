@@ -28,7 +28,12 @@ const specials = {
         title: "一心不乱",
         name: "水流の徹心",
         chara_name: "不破咲"
-    }  
+    },
+    "Rinya": {
+        title: "鏡の落影",
+        name: "シャドーウィーブ",
+        chara_name: "凛夜"
+    }
 }
 
 export default specials

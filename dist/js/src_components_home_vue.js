@@ -15,7 +15,7 @@
   \*******************************************************************************************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  data() {\n    return {\n      updates: [{\n        date: \"2023/03/27\",\n        content: \"初回リリース\",\n        key: \"1\"\n      }]\n    };\n  }\n});\n\n//# sourceURL=webpack://tof_gacha_sim2/./src/components/AboutPage.vue?./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use%5B0%5D!./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D.use%5B0%5D");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  data() {\n    return {\n      updates: [{\n        date: \"2023/03/27\",\n        content: \"初回リリース\",\n        key: \"1\"\n      }, {\n        data: \"2023/03/29\",\n        content: \"凛夜実装\",\n        key: \"2\"\n      }]\n    };\n  }\n});\n\n//# sourceURL=webpack://tof_gacha_sim2/./src/components/AboutPage.vue?./node_modules/babel-loader/lib/index.js??clonedRuleSet-40.use%5B0%5D!./node_modules/vue-loader/dist/index.js??ruleSet%5B0%5D.use%5B0%5D");
 
 /***/ }),
 

@@ -33,6 +33,11 @@ const specials = {
         title: "鏡の落影",
         name: "シャドーウィーブ",
         chara_name: "凛夜"
+    },
+    "Ran": {
+        title: "炎の施流",
+        name: "陵光",
+        chara_name: "嵐"
     }
 }
 

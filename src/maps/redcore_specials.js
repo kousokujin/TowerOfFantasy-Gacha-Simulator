@@ -38,6 +38,11 @@ const specials = {
         title: "炎の施流",
         name: "陵光",
         chara_name: "嵐"
+    },
+    "Icarus": {
+        title: "ロンリーフェザー",
+        name: "グロリアスライト",
+        chara_name: "イカロス"
     }
 }
 

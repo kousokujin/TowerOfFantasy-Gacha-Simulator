@@ -12,7 +12,7 @@
                     </v-list-item>
                     <v-list-item>
                         <v-list-item-title>バージョン</v-list-item-title>
-                        <v-list-item-text>1.0.0</v-list-item-text>
+                        <v-list-item-text>1.0.4</v-list-item-text>
                     </v-list-item>
                     <v-list-item>
                         <v-list-item-title>アップデート履歴</v-list-item-title>
@@ -48,6 +48,11 @@
                         date: "2023/04/02",
                         content: "嵐実装",
                         key: "3"
+                    },
+                    {
+                        date: "2023/04/14",
+                        content: "イカロス実装",
+                        key: "4"
                     }
                 ]
             }

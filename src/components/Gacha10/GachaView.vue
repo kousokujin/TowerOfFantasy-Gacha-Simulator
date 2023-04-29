@@ -87,10 +87,10 @@
   import Result10View from "./Result10View.vue"
 
   function CreateController(path_params){
-        if('id' in path_params){
-          return GachaCreator(path_params.type,path_params.id)
-        } 
-        return GachaCreator(path_params.type)
+    if('id' in path_params){
+      return GachaCreator(path_params.type,path_params.id)
+    } 
+    return GachaCreator(path_params.type)
   }
 
   export default {
@@ -135,13 +135,11 @@
 
     watch:{
       '$route.params'(to){
-        console.log(to)
         this.controller = CreateController(to)
-        document.title = this.controller.title
+        if(this.controller != false){
+          document.title = this.controller.title
+        }
       }
-    },
-    beforeRouteUpdate(to, from, next) {
-      next()
     }
   }
 </script>

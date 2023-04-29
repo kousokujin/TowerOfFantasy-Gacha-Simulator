@@ -16,6 +16,8 @@ function CreateController(type,special=""){
                 return new RedcoreController(special)
             }
             return new GoldCoreController()
+        default:
+            return false
     }
 }
 

@@ -14,7 +14,7 @@
         <div class="text-h3 pa-2">限定ガチャ</div>
       </v-row>
       <v-row>
-        <v-col cosl="auto" v-for="item in navlist.spetials" :key="item">
+        <v-col cols="auto" v-for="item in navlist.spetials" :key="item">
           <v-card width="300" :color="item.color" :to="item.link">
             <v-card-title>{{item.title}}</v-card-title>
             <v-card-subtitle>{{item.chara_name}}</v-card-subtitle>

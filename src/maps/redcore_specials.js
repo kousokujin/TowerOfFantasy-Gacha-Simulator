@@ -28,7 +28,28 @@ const specials = {
         title: "一心不乱",
         name: "水流の徹心",
         chara_name: "不破咲"
-    }  
+    },
+    "Rinya": {
+        title: "鏡の落影",
+        name: "シャドーウィーブ",
+        chara_name: "凛夜"
+    },
+    "Ran": {
+        title: "炎の施流",
+        name: "陵光",
+        chara_name: "嵐"
+    },
+    "Icarus": {
+        title: "ロンリーフェザー",
+        name: "グロリアスライト",
+        chara_name: "イカロス"
+    },
+    "Fiona": {
+        title: "エレガントタイム",
+        name: "月星の環",
+        chara_name: "フィオナ"
+    }
+
 }
 
 export default specials

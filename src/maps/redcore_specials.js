@@ -43,7 +43,13 @@ const specials = {
         title: "ロンリーフェザー",
         name: "グロリアスライト",
         chara_name: "イカロス"
+    },
+    "Fiona": {
+        title: "エレガントタイム",
+        name: "月星の環",
+        chara_name: "フィオナ"
     }
+
 }
 
 export default specials

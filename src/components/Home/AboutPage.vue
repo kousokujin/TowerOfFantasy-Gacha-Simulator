@@ -12,12 +12,12 @@
                     </v-list-item>
                     <v-list-item>
                         <v-list-item-title>バージョン</v-list-item-title>
-                        <v-list-item-text>1.0.5</v-list-item-text>
+                        <v-list-item-text>{{updates[updates.length - 1].version}}</v-list-item-text>
                     </v-list-item>
                     <v-list-item>
                         <v-list-item-title>アップデート履歴</v-list-item-title>
                         <v-list-item-text v-for="item in updates" :key="item.key">
-                            <p>{{item.date}} {{item.content}}</p>
+                            <p>{{item.date}}({{item.version}}){{item.content}}</p>
                         </v-list-item-text>
                     </v-list-item>
                     <v-list-item>
@@ -37,27 +37,27 @@
                     {
                         date: "2023/03/27",
                         content: "初回リリース",
-                        key: "1"
+                        version: "1.0.1"
                     },
                     {
                         date: "2023/03/29",
                         content: "凛夜実装",
-                        key: "2"
+                        version: "1.0.2"
                     },
                     {
                         date: "2023/04/02",
                         content: "嵐実装",
-                        key: "3"
+                        version: "1.0.3"
                     },
                     {
                         date: "2023/04/14",
                         content: "イカロス実装",
-                        key: "4"
+                        version: "1.0.4"
                     },
                     {
                         date: "2023/04/29",
                         content: "フィオナ実装",
-                        key: "5"
+                        version: "1.0.5"
                     },
                 ]
             }

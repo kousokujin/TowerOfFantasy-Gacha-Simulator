@@ -28,7 +28,7 @@
 </template>
 
 <script>
-  import special_items from "../maps/redcore_specials.js"
+  import special_items from "../../maps/redcore_specials.js"
   import about_page from "./AboutPage.vue"
   export default {
     name: 'HomeView',

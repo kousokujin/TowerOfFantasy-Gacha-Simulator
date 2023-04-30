@@ -27,6 +27,7 @@
 
 <script>
 import special_items from "./maps/redcore_specials.js"
+import utility from "./lib/Utility.js"
 export default {
   name: 'App',
   data: () => ({
@@ -45,7 +46,7 @@ export default {
       let add_item = {
         title: special_items[x].title,
         link: "/gacha10/redcore/"+x,
-        icon: "mdi-fish"
+        icon: utility.TypeToIcon(special_items[x].type)
       }
       this.nav_list.spetials.push(add_item)
     })

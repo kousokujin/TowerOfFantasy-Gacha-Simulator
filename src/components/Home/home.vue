@@ -28,8 +28,9 @@
 </template>
 
 <script>
-  import special_items from "../maps/redcore_specials.js"
+  import special_items from "../../maps/redcore_specials.js"
   import about_page from "./AboutPage.vue"
+  import utility from "../../lib/Utility.js"
   export default {
     name: 'HomeView',
     components: {
@@ -52,7 +53,8 @@
           title: special_items[x].title,
           chara_name: special_items[x].chara_name,
           link: "/gacha10/redcore/"+x,
-          color: "red-lighten-4"
+          color: utility.TypeToColor(special_items[x].type),
+          icon: utility.TypeToIcon(special_items[x].type)
         }
         this.navlist.spetials.push(add_item)
       })

@@ -6,17 +6,17 @@ const router = createRouter({
     {
       path: '/',
       name: 'HomeView',
-      component: () =>import('./components/home.vue')
+      component: () =>import('./components/Home/home.vue')
     },
     {
       path: '/gacha10/:type/:id',
       name: 'Redcore',
-      component: () => import('./components/GachaView.vue')
+      component: () => import('./components/Gacha10/GachaView.vue')
     },
     {
       path: '/gacha10/:type/',
       name: 'Blackcore',
-      component: () => import('./components/GachaView.vue')
+      component: () => import('./components/Gacha10/GachaView.vue')
     }
   ]
 })

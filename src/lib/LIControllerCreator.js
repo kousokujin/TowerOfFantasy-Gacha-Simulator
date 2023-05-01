@@ -2,8 +2,9 @@ import BlackcoreController from "./LIBlackcoreController.js"
 import GoldcoreController from "./LIGoldcoreController.js"
 import RedcoreController from "./LIRedcoreController.js"
 
+import GoldMatricesController from "./LIGoldMatricesController.js"
+
 import special_items from "../maps/redcore_specials.js"
-import GoldCoreController from "./LIGoldcoreController.js"
 
 function CreateController(type,special=""){
     switch(type){
@@ -15,7 +16,9 @@ function CreateController(type,special=""){
             if(Object.keys(special_items).includes(special) == true){
                 return new RedcoreController(special)
             }
-            return new GoldCoreController()
+            return new GoldcoreController()
+        case "goldmatrices":
+            return new GoldMatricesController()
         default:
             return false
     }

@@ -21,15 +21,7 @@ const datamap = {
                 memory: "重なる背中",
                 faith: "癒しの心",
                 emotion: "あなたと共に"
-            },
-            {
-                name: "",
-                mind: "風見鶏",
-                memory: "重力任せ",
-                faith: "揺らめき",
-                emotion: "冷静と情熱"
-            },
-
+            }
         ],
         rate: 4.2
     },
@@ -66,7 +58,8 @@ const datamap = {
                 faith: "メカの心",
                 emotion: "百発百中"
             },
-        ]
+        ],
+        rate: 88.3
     }
 
 }

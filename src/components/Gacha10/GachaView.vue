@@ -21,7 +21,7 @@
   <v-container>
     <v-col>
       <v-row>
-        <ResultView  :controller="controller" />
+        <ResultView :controller="controller" />
         <CalcCostView :controller="controller" />
       </v-row>
     </v-col>

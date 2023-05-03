@@ -30,5 +30,34 @@ export default {
             default:
                 return "grey-lighten-4"
         }
+    },
+    last10_card_color(reality){
+        switch(reality){
+            case "SSR":
+                return "yellow-lighten-2"
+            case "SR":
+                return "purple-lighten-4"
+            case "R":
+                return "light-green-lighten-4"
+            default:
+                return "white"
+        }
+    },
+    MatricesPosToDisplay(pos){
+        switch(pos){
+            case "mind": 
+                return "思考"
+            case "memory":
+                return "記憶"
+            case "faith":
+                return "信念"
+            case "emotion":
+                return "感情"
+            default:
+                return ""
+        }
+    },
+    MatricesTypesArr(){
+        return ["mind","memory","faith","emotion"]
     }
 }

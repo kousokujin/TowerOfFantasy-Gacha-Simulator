@@ -11,6 +11,10 @@ class BlackCoreController{
         return BlackcoreMap
     }
 
+    get type(){
+        return "weapon"
+    }
+
     get draw_count(){
         let keys = Object.keys(this.m_result_history)
 

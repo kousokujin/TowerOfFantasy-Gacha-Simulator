@@ -3,19 +3,32 @@
         <div class="text-h3">10連結果</div>
         <v-row>
             <v-col v-for="(item,index) in controller.last10" :key="index" cols="auto">
-            <v-card width="250"
-            :class="['d-flex']"
-            :color="last10_color(item.reality)"
-            >
-                <v-card-item>
-                <v-card-subtitle>
-                    <span>{{convert_rearity(item.reality)}}</span>
-                    <span v-if="item.ceiling"> 天井</span>
-                </v-card-subtitle>
-                <v-card-title>{{matrix_name(item)}}</v-card-title>
-                <v-card-subtitle>抽選回数: {{get_history(item).count}}</v-card-subtitle>
-                </v-card-item>
-            </v-card>
+                <v-card width="250"
+                :class="['d-flex']"
+                :color="last10_color(item.reality)"
+                >
+                    <v-card-item>
+                        <v-card-title class="text-h8">{{matrix_name(item)}}</v-card-title>
+                        <!--
+                        <v-card-subtitle>
+                            <v-row no-gutters>
+                                <v-col cols="auto">
+                                    <span class="text-right">抽選回数: {{get_history(item).count}}</span>
+                                </v-col>
+                                <v-col cols="auto">
+                                        <span>{{convert_rearity(item.reality)}}</span>
+                                        <span v-if="item.ceiling"> 天井</span>
+                                </v-col>
+                            </v-row>
+                        </v-card-subtitle>
+                        -->
+                        <v-card-subtitle>
+                            <span>抽選回数: {{get_history(item).count}}</span>
+                            <span>{{convert_rearity(item.reality)}}</span>
+                            <span v-if="item.ceiling"> 天井</span>
+                        </v-card-subtitle>
+                    </v-card-item>
+                </v-card>
             </v-col>
         </v-row>
     </v-container>

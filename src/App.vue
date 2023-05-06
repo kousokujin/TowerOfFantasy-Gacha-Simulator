@@ -36,6 +36,7 @@ export default {
       normal: [
         {title: "ゴールドコアガチャ", link: "/gacha10/goldcore", icon: "mdi-circle-outline"},
         {title: "ブラックコアガチャ", link: "/gacha10/blackcore", icon: "mdi-circle"},
+        {title: "検索クーポンガチャ", link: "/gacha10/goldmatrices", icon: "mdi-vector-rectangle"}
       ],
       spetials: [] 
     }

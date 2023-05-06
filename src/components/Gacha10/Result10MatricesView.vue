@@ -8,23 +8,13 @@
                 :color="last10_color(item.reality)"
                 >
                     <v-card-item>
-                        <v-card-title class="text-h8">{{matrix_name(item)}}</v-card-title>
-                        <!--
                         <v-card-subtitle>
-                            <v-row no-gutters>
-                                <v-col cols="auto">
-                                    <span class="text-right">抽選回数: {{get_history(item).count}}</span>
-                                </v-col>
-                                <v-col cols="auto">
-                                        <span>{{convert_rearity(item.reality)}}</span>
-                                        <span v-if="item.ceiling"> 天井</span>
-                                </v-col>
-                            </v-row>
+                            <span v-for="pos in get_matrices_arr" :class="get_pos_class(pos,item.pos)" :key="pos">{{convert_pos_to_display(pos)}}  </span>
                         </v-card-subtitle>
-                        -->
+                        <v-card-title class="text-h9">{{matrix_name(item)}}</v-card-title>
                         <v-card-subtitle>
-                            <span>抽選回数: {{get_history(item).count}}</span>
                             <span>{{convert_rearity(item.reality)}}</span>
+                            <span> 抽選回数: {{get_history(item).count}}</span>
                             <span v-if="item.ceiling"> 天井</span>
                         </v-card-subtitle>
                     </v-card-item>
@@ -67,6 +57,25 @@
                         return item.name
                     }
                 }
+            },
+
+            get_pos_class(){
+                return (pos,type)=>{
+                    if(pos == type){
+                        return "text-body-2"
+                    }
+                    else{
+                        return "text-body-2 text-disabled"
+                    }
+                }
+            },
+
+            get_matrices_arr(){
+                return utility.MatricesTypesArr()
+            },
+
+            convert_pos_to_display(){
+                return (pos)=>utility.MatricesPosToDisplay(pos)
             }
         }
     }

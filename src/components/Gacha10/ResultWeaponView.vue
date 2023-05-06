@@ -21,9 +21,6 @@
                         回数
                     </th>
                     <th class="text-left">
-                        天井
-                    </th>
-                    <th class="text-left">
                         割合
                     </th>
                     </tr>
@@ -34,8 +31,7 @@
                     :key="index"
                     >
                     <td>{{item}}</td>
-                    <td>{{controller.history[item].count}}</td>
-                    <td>{{controller.history[item].ceiling_count}}</td>
+                    <td>{{controller.history[item].count}}({{controller.history[item].ceiling_count}})</td>
                     <td>{{get_rate(item)}}</td>
                     </tr>
                 </tbody>

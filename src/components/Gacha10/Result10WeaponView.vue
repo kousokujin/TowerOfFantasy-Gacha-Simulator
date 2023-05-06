@@ -8,12 +8,12 @@
             :color="last10_color(item.reality)"
             >
                 <v-card-item>
-                <v-card-subtitle>
-                    <span>{{convert_rearity(item.reality)}}</span>
-                    <span v-if="item.ceiling"> 天井</span>
-                </v-card-subtitle>
-                <v-card-title>{{item.name}}</v-card-title>
-                <v-card-subtitle>抽選回数: {{get_history(item).count}}</v-card-subtitle>
+                    <v-card-title class="text-h9">{{item.name}}</v-card-title>
+                    <v-card-subtitle>
+                        <span>{{convert_rearity(item.reality)}}</span>
+                        <span> 抽選回数: {{get_history(item).count}}</span>
+                        <span v-if="item.ceiling"> 天井</span>
+                    </v-card-subtitle>
                 </v-card-item>
             </v-card>
             </v-col>

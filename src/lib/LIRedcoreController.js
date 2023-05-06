@@ -2,10 +2,10 @@ import GoldcoreController from "./LIGoldcoreController.js"
 import special_items from "../maps/redcore_specials.js"
 
 class RedCoreController extends GoldcoreController{
-    constructor(spetial){
+    constructor(special){
         super()
-        this.spetial = special_items[spetial]
-        this.m_result_history[this.spetial.name] = {
+        this.m_special = special_items[special]
+        this.m_result_history[this.m_special.name] = {
             reality: "SSR",
             count: 0,
             ceiling_count: 0
@@ -13,7 +13,7 @@ class RedCoreController extends GoldcoreController{
     }
 
     get title(){
-        return this.spetial.title
+        return this.m_special.title
     }
 
     get item_name(){
@@ -27,7 +27,7 @@ class RedCoreController extends GoldcoreController{
         if(drop.reality == "SSR"){
             let r = Math.random();
             if(r > 0.5){
-                drop.name = this.spetial.name;
+                drop.name = this.m_special.name;
             }
         }
 

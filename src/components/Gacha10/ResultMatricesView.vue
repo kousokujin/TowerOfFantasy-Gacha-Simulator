@@ -21,18 +21,15 @@
                             <v-table v-if="get_history_reality(reality,pos).length">
                             <thead>
                                 <tr>
-                                <th class="text-left">
-                                    名前
-                                </th>
-                                <th class="text-left">
-                                    回数
-                                </th>
-                                <th class="text-left">
-                                    天井
-                                </th>
-                                <th class="text-left">
-                                    割合
-                                </th>
+                                    <th class="text-left">
+                                        名前
+                                    </th>
+                                    <th class="text-left">
+                                        回数
+                                    </th>
+                                    <th class="text-left">
+                                        割合
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -41,8 +38,7 @@
                                 :key="index"
                                 >
                                 <td>{{controller.history[pos][item].display_name}}</td>
-                                <td>{{controller.history[pos][item].count}}</td>
-                                <td>{{controller.history[pos][item].ceiling_count}}</td>
+                                <td>{{controller.history[pos][item].count}}({{controller.history[pos][item].ceiling_count}})</td>
                                 <td>{{get_rate(item,pos)}}</td>
                                 </tr>
                             </tbody>

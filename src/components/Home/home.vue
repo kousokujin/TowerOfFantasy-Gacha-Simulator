@@ -42,6 +42,7 @@
         normal: [
           {title: "ゴールドコアガチャ", link: "/gacha10/goldcore", color: "yellow-lighten-2"},
           {title: "ブラックコアガチャ", link: "/gacha10/blackcore", color: "purple-lighten-4"},
+          {title: "検索クーポンガチャ", link: "/gacha10/goldmatrices" , color: "orange-lighten-2"}
         ],
         spetials: [] 
       }

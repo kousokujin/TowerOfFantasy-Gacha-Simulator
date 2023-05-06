@@ -84,6 +84,10 @@ class GoldMatricesController extends BlackCoreController{
     }
 
     OneDraw(write_history = true){
+        if((this.draw_count + 1) % 40 == 0){
+            return this.DrawOnlyOneReality("SSR", write_history);
+        }
+
         let r = Math.random();
         let drop = null;
         let item_keys = Object.keys(this.m_item_map)
@@ -114,11 +118,40 @@ class GoldMatricesController extends BlackCoreController{
 
         if(drop == null){
             drop = {value: r}
+            return drop
+        }
+
+        if(drop.reality == "SR" && (this.draw_count + 1) % 10 == 0){
+            drop.ceiling = true;
+        }
+
+        if(drop.reality != "SR" && drop.reality != "SSR" && (this.draw_count + 1) % 10 == 0){
+            return this.DrawOnlyOneReality("SR",write_history);
         }
 
         if(write_history == true){
             this.WriteHistory(drop)
         }
+        return drop;
+    }
+
+    DrawOnlyOneReality(reality,write_history = true){
+        let r = Math.floor(Math.random() * this.m_item_map[reality].items.length);
+        let pos = this.pos_arr[Math.floor(Math.random() * this.pos_arr.length)];
+
+        let drop = {
+            reality: reality,
+            name: this.m_item_map[reality].items[r][pos],
+            chara_name: this.m_item_map[reality].items[r].name,
+            rate: this.m_item_map[reality].rate,
+            pos: pos,
+            ceiling: true
+        }
+
+        if(write_history == true){
+            this.WriteHistory(drop)
+        }
+
         return drop;
     }
 }

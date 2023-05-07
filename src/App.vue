@@ -66,7 +66,6 @@ export default {
           color: utility.TypeToColor(special_items[x].type),
           icon: utility.TypeToIcon(special_items[x].type)
         }
-        console.log(add_matrix)
         this.nav_list.sp_matrices.push(add_matrix)
       }
     })

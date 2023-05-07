@@ -154,6 +154,17 @@ class GoldMatricesController extends BlackCoreController{
 
         return drop;
     }
+
+    Reset(){
+        this.m_last10 = []
+
+        this.pos_arr.forEach(p=>{
+            Object.keys(this.m_result_history[p]).forEach(x=>{
+                this.m_result_history[p][x].count = 0
+                this.m_result_history[p][x].ceiling_count = 0
+            })
+        })
+    }
 }
 
 export default GoldMatricesController

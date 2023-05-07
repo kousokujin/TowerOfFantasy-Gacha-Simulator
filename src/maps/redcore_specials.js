@@ -1,33 +1,27 @@
 const specials = {
-    "Fenrir": {
-        title: "ずっといっしょ",
-        name: "グレイプニル",
-        chara_name: "フェンリル",
-        type: "volt"
-    },
-    "Umi": {
-        title: "別れ花",
-        name: "メビウス",
-        chara_name: "ウーミィ",
-        type: "grievous"
-    },
-    "Alyss": {
-        title: "氷翼の吹雪",
-        name: "不滅の翼",
-        chara_name: "アリス",
-        type: "ice"
-    },
-    "Annabella": {
-        title: "御心のままに",
-        name: "クローバークロス",
-        chara_name: "アナベラ",
-        type: "flame"
-    },
     "Frigg": {
         title: "天使の旅立ち",
         name: "バルムンク",
         chara_name: "フレイヤ",
         type: "ice"
+    },
+    "Ruby": {
+        title: "スパーク",
+        name: "スパーク",
+        chara_name: "ラビィ",
+        type: "flame"
+    },
+    "TianLang": {
+        title: "破重雷槍",
+        name: "破重雷槍",
+        chara_name: "天琅",
+        type: "volt"
+    },
+    "Lyra": {
+        title: "夕べの祈り",
+        name: "夕べの祈り",
+        chara_name: "エスター",
+        type: "grievous"
     },
     "FuwaSaki" : {
         title: "一心不乱",
@@ -40,6 +34,30 @@ const specials = {
         name: "シャドーウィーブ",
         chara_name: "凛夜",
         type: "altered"
+    },
+    "Annabella": {
+        title: "御心のままに",
+        name: "クローバークロス",
+        chara_name: "アナベラ",
+        type: "flame"
+    },
+    "Alyss": {
+        title: "氷翼の吹雪",
+        name: "不滅の翼",
+        chara_name: "アリス",
+        type: "ice"
+    },
+    "Umi": {
+        title: "別れ花",
+        name: "メビウス",
+        chara_name: "ウーミィ",
+        type: "grievous"
+    },
+    "Fenrir": {
+        title: "ずっといっしょ",
+        name: "グレイプニル",
+        chara_name: "フェンリル",
+        type: "volt"
     },
     "Ran": {
         title: "炎の施流",

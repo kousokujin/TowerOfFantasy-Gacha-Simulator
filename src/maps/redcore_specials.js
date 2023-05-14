@@ -76,6 +76,12 @@ const specials = {
         name: "月星の環",
         chara_name: "フィオナ",
         type: "altered"
+    },
+    "Gnonno": {
+        title: "冒険の時流",
+        name: "プチハリケーン",
+        chara_name: "グノノ",
+        type: "grievous"
     }
 
 }

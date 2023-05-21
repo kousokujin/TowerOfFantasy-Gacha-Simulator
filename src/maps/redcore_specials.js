@@ -1,10 +1,4 @@
 const specials = {
-    "Frigg": {
-        title: "天使の旅立ち",
-        name: "バルムンク",
-        chara_name: "フレイヤ",
-        type: "ice"
-    },
     "Ruby": {
         title: "スパーク",
         name: "スパーク",

@@ -63,7 +63,28 @@ const datamap = {
                 memory: "フォーマット",
                 faith: "弱者のサバイバル",
                 emotion: "不気味な世界"
-            }
+            },
+            {
+                name: "クローディア",
+                mind: "冷静な分析",
+                memory: "私の真実",
+                faith: "正義の星",
+                emotion: "強靭なフィールド"
+            },
+            {
+                name: "コバルト",
+                mind: "第6の目",
+                memory: "最初の元手",
+                faith: "芸術の大家",
+                emotion: "機械神降臨"
+            },
+            {
+                name: "フレイヤ",
+                mind: "この身は剣",
+                memory: "厄災の後",
+                faith: "立場は違えど",
+                emotion: "心の奥の迷い"
+            },
         ],
         rate: 4.2
     },

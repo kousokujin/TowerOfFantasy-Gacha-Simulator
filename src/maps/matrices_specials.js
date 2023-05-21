@@ -1,10 +1,4 @@
 const specials = {
-    "Frigg": {
-        mind: "思考",
-        memory: "記憶",
-        faith: "信念",
-        emotion: "感情"
-    },
     "Ruby": {
         mind: "思考",
         memory: "記憶",

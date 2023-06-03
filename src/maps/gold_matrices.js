@@ -79,6 +79,13 @@ const datamap = {
                 emotion: "機械神降臨"
             },
             {
+                name: "ネメシス",
+                mind: "メタルセル",
+                memory: "クマの人形",
+                faith: "スパークル",
+                emotion: "ハートエンジン"
+            },
+            {
                 name: "フレイヤ",
                 mind: "この身は剣",
                 memory: "厄災の後",

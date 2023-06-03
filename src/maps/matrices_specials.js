@@ -6,10 +6,10 @@ const specials = {
         emotion: "感情"
     },
     "TianLang": {
-        mind: "思考",
-        memory: "記憶",
-        faith: "信念",
-        emotion: "感情"
+        mind: "将星",
+        memory: "原点回帰",
+        faith: "波乱",
+        emotion: "異形慴伏"
     },
     "Lyra": {
         mind: "献身",
@@ -48,10 +48,10 @@ const specials = {
         emotion: "感情"
     },
     "Fenrir": {
-        mind: "思考",
-        memory: "記憶",
-        faith: "信念",
-        emotion: "感情"
+        mind: "夢世界",
+        memory: "捨て犬",
+        faith: "ホーム",
+        emotion: "依存"
     },
     "Ran": {
         mind: "思考",
@@ -76,6 +76,12 @@ const specials = {
         memory: "遊戯",
         faith: "不屈",
         emotion: "自暴自棄"
+    },
+    "Rubilia": {
+        mind: "迷子",
+        memory: "啓示",
+        faith: "蘇生",
+        emotion: "種族"
     }
 }
 

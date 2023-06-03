@@ -76,6 +76,12 @@ const specials = {
         name: "プチハリケーン",
         chara_name: "グノノ",
         type: "grievous"
+    },
+    "Rubilia": {
+        title: "遡る希望",
+        name: "絶響",
+        chara_name: "レビリア",
+        type: "volt"
     }
 
 }

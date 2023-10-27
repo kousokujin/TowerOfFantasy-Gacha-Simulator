@@ -92,6 +92,34 @@ const datamap = {
                 faith: "立場は違えど",
                 emotion: "心の奥の迷い"
             },
+            {
+                name: "ラビィ",
+                mind: "背中の影に",
+                memory: "立ち込める蒸気",
+                faith: "影のように",
+                emotion: "ドリーと火花"
+            },
+            {
+                name: "不破咲",
+                mind: "没頭",
+                memory: "挑戦",
+                faith: "冷静",
+                emotion: "主導権"
+            },
+            {
+                name: "エスター",
+                mind: "ソフトウェア再構築",
+                memory: "携えた灯",
+                faith: "影のように",
+                emotion: "果てしない本"
+            },
+            {
+                name: "天琅",
+                mind: "将星",
+                memory: "原点回帰",
+                faith: "波乱",
+                emotion: "異形慴伏"
+            },
         ],
         rate: 4.2
     },

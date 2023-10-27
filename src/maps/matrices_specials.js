@@ -1,28 +1,4 @@
 const specials = {
-    "Ruby": {
-        mind: "思考",
-        memory: "記憶",
-        faith: "信念",
-        emotion: "感情"
-    },
-    "TianLang": {
-        mind: "将星",
-        memory: "原点回帰",
-        faith: "波乱",
-        emotion: "異形慴伏"
-    },
-    "Lyra": {
-        mind: "献身",
-        memory: "光の海",
-        faith: "明鏡",
-        emotion: "黒狐の仮面"
-    },
-    "FuwaSaki": {
-        mind: "思考",
-        memory: "記憶",
-        faith: "信念",
-        emotion: "感情"
-    },
     "Rinya": {
         mind: "思考",
         memory: "記憶",
@@ -36,10 +12,10 @@ const specials = {
         emotion: "感情"
     },
     "Alyss": {
-        mind: "思考",
-        memory: "記憶",
-        faith: "信念",
-        emotion: "感情"
+        mind: "幻影の舞",
+        memory: "一つの理想",
+        faith: "継承",
+        emotion: "不滅の意志"
     },
     "Umi": {
         mind: "思考",
@@ -60,10 +36,10 @@ const specials = {
         emotion: "感情"
     },
     "Icarus": {
-        mind: "思考",
-        memory: "記憶",
-        faith: "信念",
-        emotion: "感情"
+        mind: "唯我",
+        memory: "展望",
+        faith: "覆氷",
+        emotion: "旅人"
     },
     "Fiona": {
         mind: "文武",
@@ -82,6 +58,42 @@ const specials = {
         memory: "啓示",
         faith: "蘇生",
         emotion: "種族"
+    },
+    "Ryuka": {
+        mind: "平章",
+        memory: "坊問",
+        faith: "登高",
+        emotion: "大志"
+    },
+    "Gyokuran": {
+        mind: "純真素朴",
+        memory: "朝務夕慎",
+        faith: "瑠璃照光",
+        emotion: "誠心誠意"
+    },
+    "Zeeku": {
+        mind: "思考",
+        memory: "記憶",
+        faith: "信念",
+        emotion: "感情"
+    },
+    "Mimi": {
+        mind: "思考",
+        memory: "記憶",
+        faith: "信念",
+        emotion: "感情"
+    },
+    "Hiiro": {
+        mind: "思考",
+        memory: "記憶",
+        faith: "信念",
+        emotion: "感情"
+    },
+    "Rinhan": {
+        mind: "雲霞",
+        memory: "寒意",
+        faith: "流雲",
+        emotion: "雪梅"
     }
 }
 

@@ -1,28 +1,4 @@
 const specials = {
-    "Ruby": {
-        title: "スパーク",
-        name: "スパーク",
-        chara_name: "ラビィ",
-        type: "flame"
-    },
-    "TianLang": {
-        title: "破重雷槍",
-        name: "破重雷槍",
-        chara_name: "天琅",
-        type: "volt"
-    },
-    "Lyra": {
-        title: "夕べの祈り",
-        name: "夕べの祈り",
-        chara_name: "エスター",
-        type: "grievous"
-    },
-    "FuwaSaki" : {
-        title: "一心不乱",
-        name: "水流の徹心",
-        chara_name: "不破咲",
-        type: "ice",
-    },
     "Rinya": {
         title: "鏡の落影",
         name: "シャドーウィーブ",
@@ -82,6 +58,42 @@ const specials = {
         name: "絶響",
         chara_name: "レビリア",
         type: "volt"
+    },
+    "Ryuka": {
+        title: "書字曲折",
+        name: "松慧",
+        chara_name: "榴火",
+        type: "flame"
+    },
+    "Gyokuran": {
+        title: "熾盛なる拳",
+        name: "併輪",
+        chara_name: "玉蘭",
+        type: "ice"
+    },
+    "Zeeku": {
+        title: "明景ガチャ",
+        name: "執明",
+        chara_name: "明景",
+        type: "grievous"
+    },
+    "Mimi": {
+        title: "篁ガチャ",
+        name: "孟章",
+        chara_name: "篁",
+        type: "volt"
+    },
+    "Hiiro": {
+        title: "妃色ガチャ",
+        name: "重蕊",
+        chara_name: "妃色",
+        type: "flame"
+    },
+    "Rinhan": {
+        title: "万剣合一",
+        name: "監兵",
+        chara_name: "凌寒",
+        type: "ice"
     }
 
 }
